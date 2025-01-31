@@ -14,6 +14,6 @@ if(UNIX AND NOT APPLE)
 endif()
 
 if(LINUX)
-    set(CMAKE_CXX_FLAGS "-lm -ldl -lreadline")
+    set(CMAKE_CXX_FLAGS "-lm -ldl -lreadline -fPIC")
     add_definitions(-DLUA_USE_LINUX -DLUA_USE_READLINE)
 endif()
